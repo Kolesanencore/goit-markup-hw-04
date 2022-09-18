@@ -42,7 +42,7 @@ img {
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
@@ -72,9 +72,7 @@ body {
   padding-top: 94px;
 }
 
-/* .section:nth-child(4) { */
-
-/* header */
+/* ======== Header ======= */
 
 .header {
   border-bottom: solid var(--border-colour);
@@ -91,7 +89,7 @@ body {
 .footer-logo {
   color: #000000;
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.15;
@@ -113,7 +111,7 @@ body {
   color: var(--accent-color);
 }
 
-/* site-nav */
+/* ========= Header Site-nav ======== */
 
 .site-nav {
   display: flex;
@@ -143,7 +141,7 @@ body {
 }
 
 .current::after {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 1px;
@@ -153,7 +151,7 @@ body {
   left: 0;
 }
 
-/* header contacts */
+/* ======= Header contacts ======= */
 
 .contacts-nav {
   display: flex;
@@ -192,7 +190,7 @@ body {
   padding: 24px 0px;
 }
 
-/* title styles */
+/* ======= Title styles ======== */
 
 .section-title,
 .team-title {
@@ -211,25 +209,18 @@ body {
   line-height: 1.14;
 }
 
-/* section hero */
+/* ======== Section hero ======== */
 
 .hero {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/bgd-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.studio .hero {
-  padding: 0;
 }
 
 .hero-container {
@@ -339,9 +330,36 @@ body {
   font-size: 16px;
   line-height: 1.18;
 }
+/* SVG Team-Cards */
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #757575;
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link-white:hover,
+.social-link-white:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
 
 .job-title {
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .card {
@@ -351,7 +369,40 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* Foooter */
+/* ========= Clients Section ======= */
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-item {
+  display: flex;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+}
+
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
+  fill: var(--accent-color);
+}
+
+/* ======= Foooter ======= */
 
 .footer {
   background: var(--background-black-color);
@@ -385,7 +436,7 @@ body {
   margin-bottom: 9px;
 }
 
-/* ======== SVG Footer ======== */
+/* ======== SVG Footer content ======== */
 
 .footer-content {
   display: flex;
@@ -409,7 +460,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
 
 .network-list {
@@ -426,7 +477,7 @@ body {
   color: var(--primary-white-color);
 }
 
-/* portfolio html */
+/* ======== Portfolio html ======== */
 
 .portfolio .portfolio-menu {
   display: flex;
@@ -450,9 +501,11 @@ body {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* portfolio main box */
+/* ======= Portfolio main box======== */
 
 .main-box {
   display: flex;
@@ -471,17 +524,14 @@ body {
 
 .work-title {
   color: var(--title-text-color);
-  padding-left: 24px;
-  padding-top: 20px;
 }
 
 .filter-descr {
-  padding-left: 24px;
-  padding-bottom: 20px;
   margin-top: 4px;
 }
 
 .box-text {
+  padding: 20px 24px;
   border-left: 1px solid var(--border-colour);
   border-right: 1px solid var(--border-colour);
   border-bottom: 1px solid var(--border-colour);
@@ -497,71 +547,15 @@ body {
   width: 370px;
 }
 
-/* SVG Team-Cards */
-
-.social-list {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
+.card-link {
+  display: block;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
 }
 
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: #afb1b8;
-}
-
-.social-link:hover,
-.social-link:focus,
-.social-link-white:hover,
-.social-link-white:focus {
-  background-color: var(--accent-color);
-}
-
-.social-link:hover .icon-team,
-.social-link:hover .icon-team,
-.social-link:hover .icon-team,
-.social-link:hover .icon-team,
-.social-link:focus .icon-team,
-.social-link:focus .icon-team {
-  fill: #ffffff;
-}
-
-/*  */
-
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.client-item {
-  display: flex;
-}
-
-.client-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--accent-color);
-}
-
-.client-link:hover .icon-client,
-.client-link:focus .icon-client {
-  fill: var(--accent-color);
+.main-box .item .card-link:hover,
+.main-box .item .card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
